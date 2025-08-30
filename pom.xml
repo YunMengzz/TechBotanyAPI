@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cn.yunmeng</groupId>
+  <artifactId>TechBotany</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>TechBotany</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <!-- 由于需要nms反射，为了便于查看源码 导入的为spigot核心 不是spigot api -->
+  <!-- 命令行中使用下方命令 -->
+  <!-- mvn install:install-file -Dfile=你的1.16.5spigot jar包的位置 -DgroupId=org.spigotmc.ym -DartifactId=spigot -Dversion=1.16.5 -Dpackaging=jar -->
+  <dependencies>
+    <dependency>
+      <groupId>org.spigotmc.ym</groupId>
+      <artifactId>spigot</artifactId>
+      <version>1.16.5</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.53</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <id>source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

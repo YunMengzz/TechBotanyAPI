@@ -1,0 +1,4 @@
+dao数据层
+存储读取各种机器，方块数据
+这里面存放pojo
+json应用阿里fastJSON

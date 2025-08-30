@@ -1,0 +1,3 @@
+api包
+主要用于各个module之间的交互，为了解耦，统一使用面向接口编程实现module间交互
+存放各个module的api接口，api内部须有此接口的实现类来实现service逻辑
