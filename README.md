@@ -1,1 +1,3 @@
 A Minecraft Plugin for providing useful API to plugin developer that saving block data by NBT, capability energy system for Bukkit, multiple contacted block machine...
+
+Anyway, this is a maven project
